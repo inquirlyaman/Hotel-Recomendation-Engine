@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Noto Sans", Arial, Helvetica;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 12px;
+  color: #000;
+  background-color: #f0f0f0;
+}
+
+.mt-96 {
+  margin-top: 96px;
+}
+.mt-2 {
+  margin-top: 2px;
+}
+.form-wrap {
+  border-radius: 5px;
+  border: solid 1px #e8eaec;
+  background-color: #f9fafb;
+}
+.form-divider {
+  border-right: solid 1px #e8eaec;
+}
