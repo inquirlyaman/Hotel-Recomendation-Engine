@@ -1,0 +1,32 @@
+.askmanager-table thead tr th {
+  background-color: #1db5df;
+  border-right: 1px solid #79e1fb;
+  font-size: 0.75rem !important;
+  text-align: left;
+  font-weight: normal !important;
+  line-height: 1.38;
+  color: #ffffff !important;
+  padding: 0.75rem;
+}
+.askmanager-table .ng2-smart-sort-link {
+  color: #fff !important;
+}
+
+.askmanager-table tr {
+  background: #fff;
+  border-bottom: solid 0.5px #d1d1d1;
+  border-left: solid 0.5px #d1d1d1;
+  border-right: solid 0.5px #d1d1d1;
+}
+
+.askmanager-table tr td {
+  color: #333333;
+  font-size: 0.75rem !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  padding: 0.75rem 0.75rem !important;
+}

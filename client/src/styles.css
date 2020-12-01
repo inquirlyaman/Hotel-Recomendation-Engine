@@ -17,6 +17,9 @@ body {
 .mt-2 {
   margin-top: 2px;
 }
+.mb-40 {
+  margin-bottom: 40px;
+}
 .form-wrap {
   border-radius: 5px;
   border: solid 1px #e8eaec;

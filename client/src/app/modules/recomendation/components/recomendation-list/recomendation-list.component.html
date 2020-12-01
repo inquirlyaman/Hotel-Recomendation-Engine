@@ -1,14 +1,50 @@
 <main>
   <div class="container">
     <section class="mt-96">
+
       <div class="row mx-0 form-wrap ">
-        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 form-divider">
-          <p>form group</p>
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 form-divider mt-2 ">
+          <form [formGroup]="recommendationForm" (ngSubmit)="onSubmit(f)">
+
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="exampleInputState" aria-describedby="stateHelp"
+                placeholder="Enter State" formControlName="state">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="exampleInputDistrict" placeholder="Enter District"
+                formControlName="district">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+          </form>
         </div>
-        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
-          <p>hotel list </p>
+        <div class="col-md-8 col-lg-8 col-sm-8 col-xs-8">
+          <table class="askmanager-table w-100">
+            <thead>
+              <tr>
+                <th>Hotel Name </th>
+                <th class="w-160">State</th>
+                <th class="w-160">District</th>
+                <th class="w-160">Hotel Address</th>
+                <th>Hotel Rating</th>
+              </tr>
+              <tr *ngFor="let hotelRequest of filteredHotelRequests">
+                <td>{{ hotelRequest.name}}</td>
+                <td>{{ hotelRequest.state}}</td>
+                <td>{{ hotelRequest.District}}</td>
+                <td>{{ hotelRequest.address}}</td>
+                <td>
+                  <rating [(ngModel)]="hotelRequest.rating" [max]="5" fullIcon="★" emptyIcon="☆" [readonly]="true"
+                    [float]="true" [titles]="false">
+                  </rating>
+                </td>
+              </tr>
+            </thead>
+          </table>
         </div>
       </div>
+
     </section>
   </div>
 
