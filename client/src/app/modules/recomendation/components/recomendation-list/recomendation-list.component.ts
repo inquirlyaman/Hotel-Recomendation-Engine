@@ -16,10 +16,12 @@ export class RecomendationListComponent implements OnInit {
   recommendationForm: FormGroup;
   hotelRequests: any;
   filteredHotelRequests: any = [];
+  order: any = 'rating';
   constructor(
     private formBuilder: FormBuilder,
   ) {
     this.filteredHotelRequests = recommendationData.hotelData;
+    this.hotelRequests = recommendationData.hotelData;
   }
 
   ngOnInit() {
@@ -37,5 +39,14 @@ export class RecomendationListComponent implements OnInit {
   }
   applyFilter() {
     console.log('call me');
+    if (this.recommendationForm.value.state && this.recommendationForm.value.district) {
+      this.filteredHotelRequests = _.filter(this.hotelRequests,
+        {
+          'state': this.recommendationForm.value.state,
+          'district': this.recommendationForm.value.district
+        });
+    } else {
+      this.filteredHotelRequests = this.hotelRequests;
+    }
   }
 }

@@ -2,33 +2,33 @@ export const recommendationData = {
     hotelData: [
         {
             'name': 'Bhavna International hotel',
-            'state': 'BIhar',
-            'District': 'Bhagalpur',
+            'state': 'Bihar',
+            'district': 'Bhagalpur',
             'rating': 4,
             'address': 'Near to SBI'
         },
         {
             'name': 'Yatrik ',
-            'state': 'BIhar',
-            'District': 'Munger',
-            'rating': 4
+            'state': 'Bihar',
+            'district': 'Munger',
+            'rating': 3
         },
         {
             'name': 'FabHotel Ashoka Residency(Kadam Kuan)',
-            'state': 'BIhar',
-            'District': 'patna',
-            'rating': 4
+            'state': 'Bihar',
+            'district': 'Patna',
+            'rating': 2
         },
         {
             'name': 'The Panache',
-            'state': 'BIhar',
-            'District': 'Patna',
-            'rating': 3
+            'state': 'Bihar',
+            'district': 'Patna',
+            'rating': 4
         },
         {
             'name': 'Lagovilla Bhopal',
             'state': 'Madhya Pradesh',
-            'District': 'Bohal',
+            'district': 'Bohal',
             'rating': 3.5
         }
     ]

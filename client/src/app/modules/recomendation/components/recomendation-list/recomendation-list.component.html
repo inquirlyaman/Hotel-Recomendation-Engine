@@ -29,10 +29,10 @@
                 <th class="w-160">Hotel Address</th>
                 <th>Hotel Rating</th>
               </tr>
-              <tr *ngFor="let hotelRequest of filteredHotelRequests">
+              <tr *ngFor="let hotelRequest of filteredHotelRequests | orderBy: order : true">
                 <td>{{ hotelRequest.name}}</td>
                 <td>{{ hotelRequest.state}}</td>
-                <td>{{ hotelRequest.District}}</td>
+                <td>{{ hotelRequest.district}}</td>
                 <td>{{ hotelRequest.address}}</td>
                 <td>
                   <rating [(ngModel)]="hotelRequest.rating" [max]="5" fullIcon="★" emptyIcon="☆" [readonly]="true"
